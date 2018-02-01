@@ -9,6 +9,8 @@ Find files greater than 250 Megabytes
 
 ## [Serverless](https://serverless.com)
 
+[Serverless Cheatsheet](https://serverless.com/framework/docs/providers/aws/guide/workflow/)
+
 - `sls deploy`
 - `sls package` 
 - `sls deploy list`
