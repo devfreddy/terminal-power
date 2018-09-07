@@ -1,7 +1,7 @@
 # terminal-power
 Because my memory sucks
 
-## Listing and finding files
+## [Linux find](https://linux.die.net/man/1/find)
 
 Find files greater than 250 Megabytes
 
@@ -15,3 +15,10 @@ Find files greater than 250 Megabytes
 - `sls package` 
 - `sls deploy list`
 - `sls deploy function -f <function_name>`
+- `sls deploy --function-name=app --aws-s3-accelerate`
+
+## [NodeJS Forever](https://github.com/foreverjs/forever)
+- `forever -w app.js --watchIgnore node_modules`
+
+
+## [Lando](https://github.com/lando/lando)
