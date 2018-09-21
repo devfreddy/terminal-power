@@ -1,10 +1,16 @@
 # terminal-power
 Because my memory sucks
 
-## [AWS]()
+## [AWS](https://aws.amazon.com/)
 
 - `aws ecr get-login --no-include-email --region us-west-2`
 - `$$(aws ecr get-login --no-include-email --region us-east-1)`
+- `aws s3 rb s3://bucket-name --force`
+
+### [Elastic Beanstalk](https://aws.amazon.com/documentation/elastic-beanstalk/)
+
+- `eb printenv`
+- `eb setenv key=variable`
 
 ## [Brew](https://brew.sh/)
 
@@ -23,7 +29,8 @@ Because my memory sucks
 - `git reset --soft HEAD~1`
 - `git ls-tree -r master --name-only`
 - `git clone --depth=1 <github repository>`
-- `git remote add origin <some repo url>`
+- `git remote add <somename> <some repo url>`
+- `git pull <arbitrary name you gave the upstream> <branch in that upstream you want to pull from>`
 - `git remote set-url --add --push origin <some repo url>`
 - `git push --set-upstream origin master`
 - `git rev-parse --short HEAD 2> /dev/null | sed "s/\(.*\)/\1/"`
