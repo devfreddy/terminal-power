@@ -7,6 +7,23 @@ Because my memory sucks
 - `$$(aws ecr get-login --no-include-email --region us-east-1)`
 - `aws s3 rb s3://bucket-name --force`
 
+## [DBDiff](https://github.com/DBDiff/DBDiff)
+
+```yaml
+# In your .dbdiff file
+
+<arbitraryname>:
+    user: dev
+    password: password
+    port: 3306
+    host: 127.0.0.1
+```
+
+Note: Make sure you leave the named `server1` in the .dbdiff file, or the program chokes, even if you have other named DB's in the file.
+
+- `./dbdiff --type=schema alliesDev.allies:alliesProd.allies`
+- `./dbdiff --type=schema clarityDev.clarity:clarityProd.clarity`
+
 ### [Elastic Beanstalk](https://aws.amazon.com/documentation/elastic-beanstalk/)
 
 - `eb printenv`
