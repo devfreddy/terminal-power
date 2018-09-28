@@ -60,6 +60,10 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 
 - `find . -type f -size +250M`
 
+### [ssh]()
+
+- `ssh-keygen -R <hostname>` - Removes host ssh key so you can accept a new one
+
 ### [tail](https://linux.die.net/man/1/tail)
 
 - `tail -c 25000 -f`
