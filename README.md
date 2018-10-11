@@ -6,6 +6,9 @@ Because my memory sucks
 - `aws ecr get-login --no-include-email --region us-west-2`
 - `$$(aws ecr get-login --no-include-email --region us-east-1)`
 - `aws s3 rb s3://bucket-name --force`
+- `aws sts get-caller-identity --output text --query 'Account'`
+- `aws sts get-caller-identity --output text --query 'Account' --profile=<some profile name>`
+
 
 ## [DBDiff](https://github.com/DBDiff/DBDiff)
 
