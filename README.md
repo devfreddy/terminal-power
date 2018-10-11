@@ -83,6 +83,9 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 ## [NodeJS Forever](https://github.com/foreverjs/forever)
 - `forever -w app.js --watchIgnore node_modules`
 
+## [NPM]()
+- `npm i -g vue-cli`
+
 ## [Serverless](https://serverless.com)
 
 [Serverless Cheatsheet](https://serverless.com/framework/docs/providers/aws/guide/workflow/)
