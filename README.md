@@ -66,6 +66,16 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 
 - `find . -type f -size +250M`
 
+### [history]()
+
+[Timestamp `history`]
+- For BASH
+    - `echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bashrc
+        source ~/.bashrc` - https://askubuntu.com/a/391087
+- [For ZSHRC](https://unix.stackexchange.com/a/103407/959)
+    - `\history -E`
+    - `fc -li 100`
+
 ### [ssh]()
 
 - `ssh-keygen -R <hostname>` - Removes host ssh key so you can accept a new one
