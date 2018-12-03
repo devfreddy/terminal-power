@@ -110,6 +110,7 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `sls deploy --force function --function app`
 - `sls deploy --function-name=app --aws-s3-accelerate`
 - `serverless create --template aws-nodejs --path tribute-serverless`
+- `severless invoke local --function app`
 
 ## [Visual Studio Code]()
 
