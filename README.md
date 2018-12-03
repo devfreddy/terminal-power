@@ -9,6 +9,8 @@ Because my memory sucks
 - `aws sts get-caller-identity --output text --query 'Account'`
 - `aws sts get-caller-identity --output text --query 'Account' --profile=<some profile name>`
 
+- `aws s3api list-objects-v2 --bucket="some-bucket" --prefix="SomeFolder/" --start-after="SomeFolder/SomeFile.txt" > ~/Desktop/s3-listing.json`
+
 
 ## [DBDiff](https://github.com/DBDiff/DBDiff)
 
