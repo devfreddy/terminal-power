@@ -46,6 +46,7 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `git status .`
 - `git stash list`
 - `git stash pop`
+- `git stash drop` - Drops the "top" stash
 - `git show -s --format=%ci`
 - `git show -s --format=%ai`
 - `git reset --soft HEAD~1`
