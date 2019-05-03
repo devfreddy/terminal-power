@@ -40,6 +40,7 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 ## [Brew](https://brew.sh/)
 
 - `brew services list`
+- `brew cleanup -n` and `brew cleanup`
 
 ## [Git](https://git-scm.com)
 
