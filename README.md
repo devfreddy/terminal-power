@@ -5,13 +5,20 @@ Because my memory sucks
 
 - `aws ecr get-login --no-include-email --region us-west-2`
 - `$$(aws ecr get-login --no-include-email --region us-east-1)`
-- `aws s3 rb s3://bucket-name --force`
+
 - `aws sts get-caller-identity --output text --query 'Account'`
 - `aws sts get-caller-identity --output text --query 'Account' --profile=<some profile name>`
 
+### [AWS S3](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
+
+- `aws s3 rb s3://bucket-name --force`
 - `aws s3 ls s3://some-bucket/some-folder --recursive > ~/myFile.txt`
 - `aws s3api list-objects-v2 --bucket="some-bucket" --prefix="SomeFolder/" --start-after="SomeFolder/SomeFile.txt" > ~/Desktop/s3-listing.json`
 
+### [Elastic Beanstalk](https://aws.amazon.com/documentation/elastic-beanstalk/)
+
+- `eb printenv`
+- `eb setenv key=variable`
 
 ## [DBDiff](https://github.com/DBDiff/DBDiff)
 
@@ -29,11 +36,6 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 
 - `./dbdiff --type=schema alliesDev.allies:alliesProd.allies`
 - `./dbdiff --type=schema clarityDev.clarity:clarityProd.clarity`
-
-### [Elastic Beanstalk](https://aws.amazon.com/documentation/elastic-beanstalk/)
-
-- `eb printenv`
-- `eb setenv key=variable`
 
 ## [Brew](https://brew.sh/)
 
