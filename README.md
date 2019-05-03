@@ -66,6 +66,10 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 
 ## [Linux]()
 
+### [du (disk usage)](https://linux.die.net/man/1/du)
+
+- `du -shc * | sort -h`
+
 ### [find](https://linux.die.net/man/1/find)
 
 - `find . -type f -size +250M`
