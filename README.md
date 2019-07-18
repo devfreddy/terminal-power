@@ -123,3 +123,10 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 ## [Visual Studio Code]()
 
 - `code -g myfile.txt:100`
+
+
+## Uncategorized
+- lando yarn start:dev
+- lando ts-node /scripts/generate-typings.ts
+- lando yarn run typeorm:migrate <migration name>
+- lando yarn run typeorm:run
