@@ -97,6 +97,9 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `dos2unix -ulb somefile.txt`
 - `dos2unix -u -ul -b somefile.txt`
 
+## [rsync](https://linux.die/net/man/1/rsync)
+- `rsync --partial -rlvz --exclude='*/sites/default/files*' --size-only --ipv4 --progress -e 'ssh' user@somehost.com:/var/www/vhosts/somefolder/somesite .`
+
 ## Mac OSX
 
 - `open myfile.txt`
