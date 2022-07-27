@@ -1,4 +1,5 @@
 # terminal-power
+
 Because my memory sucks
 
 ## [AWS](https://aws.amazon.com/)
@@ -76,13 +77,13 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 
 ### [history]()
 
-[Timestamp `history`]
+#### [Timestamp `history`]
+
 - For BASH
-    - `echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bashrc
-        source ~/.bashrc` - https://askubuntu.com/a/391087
+  - `echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bashrc source ~/.bashrc` - https://askubuntu.com/a/391087
 - [For ZSHRC](https://unix.stackexchange.com/a/103407/959)
-    - `\history -E`
-    - `fc -li 100`
+  - `\history -E`
+  - `fc -li 100`
 
 ### [ssh]()
 
@@ -93,6 +94,7 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `tail -c 25000 -f`
 
 ### [dos2unix](https://linux.die.net/man/1/dos2unix)
+
 - `dos2unix -u --ascii somefile.txt`
 - `dos2unix -ulb somefile.txt`
 - `dos2unix -u -ul -b somefile.txt`
@@ -105,9 +107,15 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `open myfile.txt`
 
 ## [NodeJS Forever](https://github.com/foreverjs/forever)
+
 - `forever -w app.js --watchIgnore node_modules`
 
+## [Node]
+
+- `node -p "require('./package.json').version"`
+
 ## [NPM]()
+
 - `npm i -g vue-cli`
 
 ## [Serverless](https://serverless.com)
@@ -127,8 +135,8 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 
 - `code -g myfile.txt:100`
 
-
 ## Uncategorized
+
 - lando yarn start:dev
 - lando ts-node /scripts/generate-typings.ts
 - lando yarn run typeorm:migrate <migration name>
