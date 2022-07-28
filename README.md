@@ -75,7 +75,7 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 
 - `find . -type f -size +250M`
 
-### [history]()
+### [history](https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html)
 
 #### [Timestamp `history`]
 
@@ -85,7 +85,7 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
   - `\history -E`
   - `fc -li 100`
 
-### [ssh]()
+### [ssh](https://www.ssh.com/ssh/)
 
 - `ssh-keygen -R <hostname>` - Removes host ssh key so you can accept a new one
 
@@ -100,16 +100,20 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `dos2unix -u -ul -b somefile.txt`
 
 ## [rsync](https://linux.die/net/man/1/rsync)
+
 - `rsync --partial -rlvz --exclude='*/sites/default/files*' --size-only --ipv4 --progress -e 'ssh' user@somehost.com:/var/www/vhosts/somefolder/somesite .`
 
 ## Mac OSX
 
 - `open myfile.txt`
+- `base64 -d <<< dm9pbGE=` - Base64 Decode
+- `echo -n "voila" | base64` - Echo string without newline character and pipe to base64 for encoding
 
 ## [NodeJS Forever](https://github.com/foreverjs/forever)
 
 - `forever -w app.js --watchIgnore node_modules`
 
+<<<<<<< Updated upstream
 ## [Node]
 
 - `node -p "require('./package.json').version"`
@@ -117,6 +121,13 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 ## [NPM]()
 
 - `npm i -g vue-cli`
+=======
+## [NPM](https://npmjs.com)
+
+- `npm i -g vue-cli` - Install vue-cli globally
+- `npm version <some version | minor | major | patch>` - Have NPM increment the version number for you
+- `npm publish --access=public --tag next --dry-run` - Dry run of publishing to the "next" dist-tag
+>>>>>>> Stashed changes
 
 ## [Serverless](https://serverless.com)
 
