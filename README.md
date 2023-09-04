@@ -16,10 +16,35 @@ Because my memory sucks
 - `aws s3 ls s3://some-bucket/some-folder --recursive > ~/myFile.txt`
 - `aws s3api list-objects-v2 --bucket="some-bucket" --prefix="SomeFolder/" --start-after="SomeFolder/SomeFile.txt" > ~/Desktop/s3-listing.json`
 
-### [Elastic Beanstalk](https://aws.amazon.com/documentation/elastic-beanstalk/)
+## [Brew](https://brew.sh/)
 
-- `eb printenv`
-- `eb setenv key=variable`
+- `brew services list`
+- `brew cleanup -n` and `brew cleanup`
+
+## [Docker](https://www.docker.com/)
+
+```shell
+# Docker
+docker context use rootless
+docker exec -it <docker container/image name> /bin/bash
+docker run --name <name> --net <network name> -p 0000:0000 -it <image name>
+
+```
+
+```shell
+# Docker Compose (v2)
+docker compose ls
+docker compose ps
+docker compose up
+docker compose down
+docker compose up -d
+docker compose up -d <service name> --build
+docker compose logs <service name> &2> ~/Desktop/logfile.log
+docker compose logs <service name> > ~/Desktop/logfile.log
+docker compose logs -f <some service name in the docker compose file>
+
+```
+
 
 ## [DBDiff](https://github.com/DBDiff/DBDiff)
 
@@ -38,10 +63,10 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `./dbdiff --type=schema alliesDev.allies:alliesProd.allies`
 - `./dbdiff --type=schema clarityDev.clarity:clarityProd.clarity`
 
-## [Brew](https://brew.sh/)
+### [Elastic Beanstalk](https://aws.amazon.com/documentation/elastic-beanstalk/)
 
-- `brew services list`
-- `brew cleanup -n` and `brew cleanup`
+- `eb printenv`
+- `eb setenv key=variable`
 
 ## [Git](https://git-scm.com)
 
@@ -63,9 +88,18 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `git push --set-upstream origin master`
 - `git rev-parse --short HEAD 2> /dev/null | sed "s/\(.*\)/\1/"`
 
-## [Lando](https://github.com/lando/lando)
+## [Golang](https://go.dev/)
 
-## [Linux]()
+- `go env GOPATH`
+
+## [Lando](https://lando.dev/) [Dev](https://github.com/lando/lando)
+
+- `lando yarn start:dev`
+- `lando ts-node /scripts/generate-typings.ts`
+- `lando yarn run typeorm:migrate <migration name>`
+- `lando yarn run typeorm:run`
+
+## [Linux](https://linux.org/)
 
 ### [du (disk usage)](https://linux.die.net/man/1/du)
 
@@ -109,25 +143,37 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 - `base64 -d <<< dm9pbGE=` - Base64 Decode
 - `echo -n "voila" | base64` - Echo string without newline character and pipe to base64 for encoding
 
-## [NodeJS Forever](https://github.com/foreverjs/forever)
-
-- `forever -w app.js --watchIgnore node_modules`
-
-<<<<<<< Updated upstream
 ## [Node]
 
 - `node -p "require('./package.json').version"`
 
-## [NPM]()
+## [NodeJS Forever](https://github.com/foreverjs/forever)
 
-- `npm i -g vue-cli`
-=======
+- `forever -w app.js --watchIgnore node_modules`
+
 ## [NPM](https://npmjs.com)
 
 - `npm i -g vue-cli` - Install vue-cli globally
 - `npm version <some version | minor | major | patch>` - Have NPM increment the version number for you
 - `npm publish --access=public --tag next --dry-run` - Dry run of publishing to the "next" dist-tag
->>>>>>> Stashed changes
+
+## [Python](https://www.python.org/)
+
+- `python`
+- `python3`
+- `pip install virtualenv`
+- `pip3.11 install virtualenv`
+- `virtualenv venv`
+- `source venv/bin/activate`
+- `python --version`
+- `python3 -m http.server 8080 -d <where to start it at>`
+
+## Rover
+
+- `rover config auth`
+- `rover graph fetch`
+- `rover dev --url <url> --name <where to stitch it into the schema>`
+- `rover subgraph introspect <url or local url>`
 
 ## [Serverless](https://serverless.com)
 
@@ -145,10 +191,3 @@ Note: Make sure you leave the named `server1` in the .dbdiff file, or the progra
 ## [Visual Studio Code]()
 
 - `code -g myfile.txt:100`
-
-## Uncategorized
-
-- lando yarn start:dev
-- lando ts-node /scripts/generate-typings.ts
-- lando yarn run typeorm:migrate <migration name>
-- lando yarn run typeorm:run
